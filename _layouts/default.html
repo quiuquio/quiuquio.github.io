@@ -55,7 +55,6 @@ layout: compress
 
 <script>
 
-window.addEventListener("load", windowLoadHandler, false);
 var sphereRad = 280;
 var radius_sp=1;
 //for debug messages
@@ -72,7 +71,7 @@ Debugger.log = function(message) {
 function windowLoadHandler() {
 	canvasApp();
 }
-
+window.addEventListener("load", windowLoadHandler, false);
 function canvasSupport() {
 	return Modernizr.canvas;
 }
